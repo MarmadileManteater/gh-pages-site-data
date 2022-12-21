@@ -20,15 +20,23 @@
     <h4 class='font-bold'><em>javascript:</em></h3>
     <pre>
       <code class='js'>import * as turbo from '@hotwire/turbo'
-turbo.start()</code>
+turbo.start()
+// everything below this is just to handle window scrolling
+const beforeRender = () => {
+  document.removeEventListener('turbo:before-render', beforeRender)
+  // scrolls the page to the top
+  window.scrollTo(0, 0)
+}
+document.addEventListener('turbo:load', () => {
+  document.addEventListener('turbo:before-render', beforeRender)
+})
+</code>
     </pre>
     <h4 class='font-bold'><em>html:</em></h3>
     <pre>
       <code class='html'>&lt;!-- 
   data-turbo-action="advance"
   - makes the back button work
-  data-autoscroll-behavior="start"
-  - makes the window scroll to the top
 -->
 &lt;turbo-frame id="main-content" data-turbo-action="advance" data-autoscroll-behavior="start">
   &lt;!-- Surround the things that you want to change on your page with this element -->
