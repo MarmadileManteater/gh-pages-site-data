@@ -31,7 +31,7 @@
         "prefix": "View the",
         "locationName": "web version",
         "link": "/freetube/#/",
-        "target": "self"
+        "target": "_blank"
       },
       {
         "prefix": "View on",
