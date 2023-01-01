@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES2017",
+    "lib": ["es2020", "DOM", "WebWorker", "DOM.Iterable", "EsNext" ],
+    "resolveJsonModule": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "outDir": "tmp",
+    "noEmit": true,
+    "types": ["node", "commonjs"],
+    "paths": {
+      "~/*": ["./scripts/*"]
+    },
+  }
+}
