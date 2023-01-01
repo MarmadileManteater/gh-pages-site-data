@@ -173,7 +173,7 @@ const getEnvironment = async () => {
   }
 }
 
-const fetch = async (urlString : string) : Promise<any> => {
+const fetchGH = async (urlString : string) : Promise<any> => {
   const environment = await getEnvironment()
   const url = new URL(urlString)
   const headers = environment !== null?{
@@ -188,20 +188,21 @@ const fetch = async (urlString : string) : Promise<any> => {
   return response.data as any
 }
 
-const fetchGH = async (path : string, endpoint : string) : Promise<any> => {
-  return fetch(`https://api.github.com/${path}/${endpoint}`)
+const fetchGHEndpoint= async (path : string, endpoint : string) : Promise<any> => {
+  return fetchGH(`https://api.github.com/${path}/${endpoint}`)
 }
 
 const fetchGHUser = async (username : string) : Promise<GHUser> => {
-  return await fetchGH('users', username) as GHUser
+  return await fetchGHEndpoint('users', username) as GHUser
 }
 
 const fetchRepoByFullName = async (fullName : string) : Promise<GHRepo> => {
-  return await fetchGH('repos', fullName) as GHRepo
+  return await fetchGHEndpoint('repos', fullName) as GHRepo
 }
 
 export async function fetchUpdatedProjectData() : Promise<IProject[]> {
   const projects = (projectData as IProject[])
+  // I want to use a map here, but with async the return type is really unwieldy
   for (let i = 0; i < projects.length; i++) {
     const project = projects[i]
     const repo = await fetchRepoByFullName(project.ghFullName) 
@@ -210,7 +211,7 @@ export async function fetchUpdatedProjectData() : Promise<IProject[]> {
       case 'commits':
         // hacky af 🤷‍♀️
         const commitsUrl = repo.commits_url.split('{')[0]
-        const commits = await fetch(commitsUrl) as GHCommit[]
+        const commits = await fetchGH(commitsUrl) as GHCommit[]
         if (commits.length > 0) {
           project.lastUpdate = commits[0].commit.author.date
         }
@@ -218,7 +219,7 @@ export async function fetchUpdatedProjectData() : Promise<IProject[]> {
       case 'releases':
         // hacky af 🤷‍♀️
         const releaseUrl = repo.releases_url.split('{')[0]
-        const releases = await fetch(releaseUrl) as GHRelease[]
+        const releases = await fetchGH(releaseUrl) as GHRelease[]
         if (releases.length > 0) {
           project.lastUpdate = releases[0].published_at
         }
