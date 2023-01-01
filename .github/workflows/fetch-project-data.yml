@@ -23,8 +23,6 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
-    - name: 🧶 Yarn
-      run: yarn
     - name: 🚧 Setup environment variables
       run:
         echo '{"token":"${{ secrets.PERSONAL_ACCESS_TOKEN }}"}' >> ./environment.json
