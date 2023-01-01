@@ -1,6 +1,7 @@
 
-import ApiClient from 'ts-node-fetch-client'
+import axios from 'axios'
 import projectData from '../projects.json'
+import { readFile } from 'fs/promises'
 
 interface IProjectButtonData {
   prefix: string
@@ -162,10 +163,29 @@ interface GHCommit {
   commit: Commit
 }
 
+// optionally pull in an API key for GH from a local file
+const getEnvironment = async () => {
+  try {
+    const file = await readFile('./environment.json')
+    return JSON.parse(file.toString())
+  } catch {
+    return null
+  }
+}
+
 const fetch = async (urlString : string) : Promise<any> => {
+  const environment = await getEnvironment()
   const url = new URL(urlString)
-  return new ApiClient({baseUri: `${url.protocol}//${url.hostname}` })
-    .get<any>({ path: url.pathname })
+  const headers = environment !== null?{
+    Accept: 'application/vnd.github+json',
+    Authorization: `token ${environment.token}`
+  }:{}
+  const response = await axios({
+    method: 'get',
+    url: `${url.protocol}//${url.hostname}${url.pathname}`,
+    headers
+  })
+  return response.data as any
 }
 
 const fetchGH = async (path : string, endpoint : string) : Promise<any> => {
