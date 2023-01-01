@@ -24,7 +24,7 @@
       }
     ],
     "thumbnail": "https://github.com/MarmadileManteater/WhatIsHidingInTheDark/raw/development/screenshots/title.png",
-    "lastUpdate": "23 October 2022"
+    "lastUpdate": "23 October 2022",
     "pullUpdatedInfoFrom": "commits",
     "ghStars": 0
   },
@@ -54,8 +54,8 @@
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/MarmadileManteater/FreeTubeCordova/development/_icons/.icon-set/iconColor_256.png",
-    "lastUpdate": "1 November 2022"
-    "pullUpdatedInfoFrom": "releases",
+    "lastUpdate": "1 November 2022",
+    "pullUpdatedInfoFrom": "releases"
   },
   {
     "type": "IProject",
@@ -83,8 +83,8 @@
       }
     ],
     "thumbnail": "https://img.itch.zone/aW1nLzk4NzcyODUucG5n/315x250%23c/m1WJNB.png",
-    "lastUpdate": "28 August 2022"
-    "pullUpdatedInfoFrom": "releases",
+    "lastUpdate": "28 August 2022",
+    "pullUpdatedInfoFrom": "releases"
   },
   {
     "type": "IProject",
@@ -110,8 +110,8 @@
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/MarmadileManteater/InvidiousClientDotNet/development/icons/invidious.png",
-    "lastUpdate": "16 August 2022"
-    "pullUpdatedInfoFrom": "releases",
+    "lastUpdate": "16 August 2022",
+    "pullUpdatedInfoFrom": "releases"
   },
   {
     "type": "IProject",
@@ -133,7 +133,7 @@
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/MarmadileManteater/SimpleRemoteKeyboardAndMouse/main/screenshots/screenshot1.png",
-    "lastUpdate": "10 October 2022"
-    "pullUpdatedInfoFrom": "commits",
+    "lastUpdate": "10 October 2022",
+    "pullUpdatedInfoFrom": "commits"
   }
 ]
