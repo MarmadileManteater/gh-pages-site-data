@@ -202,7 +202,7 @@ const fetchRepoByFullName = async (fullName : string) : Promise<GHRepo> => {
 
 export async function fetchUpdatedProjectData() : Promise<IProject[]> {
   const projects = (projectData as IProject[])
-  // I want to use a map here, but with async the return type is really unwieldy
+  // I want to use a map here, but with async, the return type is rather 📏unwieldy
   for (let i = 0; i < projects.length; i++) {
     const project = projects[i]
     const repo = await fetchRepoByFullName(project.ghFullName) 
