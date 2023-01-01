@@ -1,0 +1,47 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: 🐕Fetch project data
+
+on:
+  push:
+    branches: [ "development" ]
+  schedule:
+    - cron: "5 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+        cache: 'npm'
+    - name: 🧶 Yarn
+      run: yarn
+    - name: 🚧 Setup environment variables
+      run:
+        echo '{"token":"${{ secrets.PERSONAL_ACCESS_TOKEN }}"}' >> ./environment.json
+    - name: 🦴 Fetch project data from GH API
+      run: npx ts-node ./scripts/write-projects.ts
+    - name: 🧹 Clean-up environment
+      run: rm environment.json
+    - name: 🏹 Upload the results for verification
+      uses: actions/upload-artifact@v3
+      with:
+        name: updated-files
+        path: .
+#    - name: 📝Commit to the repo
+#      run: |
+#        git config --global user.name "MarmadileManteater/gh-pages-site-data"
+#        git config --global user.email "gh-pages-site-data[bot]@MarmadileManteater.github.io"
+#        git add .
+#        # Force the build to succeed, even if no files were changed
+#        git commit -m 'Update files' || true
+#        git push
