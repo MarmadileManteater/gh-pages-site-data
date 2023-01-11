@@ -37,7 +37,7 @@ jobs:
 #        path: .
     - name: 📝 Commit to the repo
       run: |
-        git config --global user.name "MarmadileManteater/gh-pages-site-data"
+        git config --global user.name "GH pages site data bot"
         git config --global user.email "gh-pages-site-data[bot]@MarmadileManteater.github.io"
         git add .
         # Force the build to succeed, even if no files were changed
