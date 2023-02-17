@@ -58,5 +58,13 @@
   {
     "name": "qwik",
     "link": "https://qwik.builder.io/"
+  },
+  {
+    "name": "rust",
+    "link": "https://github.com/topics/rust"
+  },
+  {
+    "name": "actix-web",
+    "link": "https://actix.rs/"
   }
 ]

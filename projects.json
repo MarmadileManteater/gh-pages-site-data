@@ -1,6 +1,28 @@
 [
   {
     "type": "IProject",
+    "title": "SimpleReverseProxy",
+    "ghFullName": "MarmadileManteater/SimpleReverseProxy",
+    "tags": [
+      "rust",
+      "actix-web"
+    ],
+    "summary": "This is a simple reverse proxy that I threw together.",
+    "buttons": [
+      {
+        "prefix": "View on",
+        "locationName": "GitHub",
+        "link": "https://github.com/MarmadileManteater/SimpleReverseProxy",
+        "target": "_blank"
+      }
+    ],
+    "thumbnail": "/thumbnails/simple-reverse-proxy.png",
+    "lastUpdate": "2023-02-17",
+    "pullUpdatedInfoFrom": "commits",
+    "ghStars": 0
+  },
+  {
+    "type": "IProject",
     "title": "What Is Hiding In The Dark",
     "ghFullName": "MarmadileManteater/WhatIsHidingInTheDark",
     "tags": [
