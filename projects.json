@@ -17,7 +17,7 @@
       }
     ],
     "thumbnail": "/thumbnails/simple-reverse-proxy.png",
-    "lastUpdate": "2023-05-28T15:16:01Z",
+    "lastUpdate": "2023-06-10T13:41:39Z",
     "pullUpdatedInfoFrom": "commits",
     "ghStars": 1
   },
@@ -78,7 +78,7 @@
     "thumbnail": "https://raw.githubusercontent.com/MarmadileManteater/FreeTubeCordova/development/_icons/.icon-set/iconColor_256.png",
     "lastUpdate": "2023-03-09T14:11:29Z",
     "pullUpdatedInfoFrom": "releases",
-    "ghStars": 68
+    "ghStars": 70
   },
   {
     "type": "IProject",
