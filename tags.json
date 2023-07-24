@@ -66,5 +66,9 @@
   {
     "name": "actix-web",
     "link": "https://actix.rs/"
+  },
+  {
+    "name": "summer-fediverse-jam",
+    "link": "https://itch.io/jam/summer-fediverse-jam"
   }
 ]

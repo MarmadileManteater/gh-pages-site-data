@@ -1,6 +1,35 @@
 [
   {
     "type": "IProject",
+    "title": "How was I supposed to know my roommate was a dimension hopping witch!?",
+    "ghFullName": "MarmadileManteater/HowWasISupposedToKnowMyRoommateWasADimensionHoppingWitch",
+    "tags": [
+      "csharp",
+      "godot",
+      "summer-fediverse-jam"
+    ],
+    "summary": "This is a game about having a roommate.",
+    "buttons": [
+      {
+        "prefix": "Play on",
+        "locationName": "itch.io",
+        "link": "https://marmadilemanteater.itch.io/how-was-i-supposed-to-know-my-roommate-was-a-dimension-hopping-witch",
+        "target": "_blank"
+      },
+      {
+        "prefix": "View on",
+        "locationName": "GitHub",
+        "link": "https://github.com/MarmadileManteater/HowWasISupposedToKnowMyRoommateWasADimensionHoppingWitch",
+        "target": "_blank"
+      }
+    ],
+    "thumbnail": "https://img.itch.zone/aW1nLzEyODkzODE3LnBuZw==/315x250%23c/TZlzHP.png",
+    "lastUpdate": "2023-07-24T23:05:43Z",
+    "pullUpdatedInfoFrom": "commits",
+    "ghStars": 1
+  },
+  {
+    "type": "IProject",
     "title": "SimpleReverseProxy",
     "ghFullName": "MarmadileManteater/SimpleReverseProxy",
     "tags": [
@@ -78,7 +107,7 @@
     "thumbnail": "https://raw.githubusercontent.com/MarmadileManteater/FreeTubeCordova/development/_icons/.icon-set/iconColor_256.png",
     "lastUpdate": "2023-03-09T14:11:29Z",
     "pullUpdatedInfoFrom": "releases",
-    "ghStars": 73
+    "ghStars": 74
   },
   {
     "type": "IProject",
