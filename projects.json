@@ -1,6 +1,36 @@
 [
   {
     "type": "IProject",
+    "title": "FreeTubeCordova",
+    "ghFullName": "MarmadileManteater/FreeTubeCordova",
+    "tags": [
+      "javascript",
+      "webpack",
+      "cordova",
+      "invidious"
+    ],
+    "summary": "This is a fork of FreeTube which squashes everything into a web app and exports it to Android via Cordova.",
+    "buttons": [
+      {
+        "prefix": "View the",
+        "locationName": "web version",
+        "link": "/freetube/#/",
+        "target": "_blank"
+      },
+      {
+        "prefix": "View on",
+        "locationName": "GitHub",
+        "link": "https://github.com/MarmadileManteater/FreeTubeCordova",
+        "target": "_blank"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/MarmadileManteater/FreeTubeCordova/development/_icons/.icon-set/iconColor_256.png",
+    "lastUpdate": "2023-03-09T14:11:29Z",
+    "pullUpdatedInfoFrom": "releases",
+    "ghStars": 78
+  },
+  {
+    "type": "IProject",
     "title": "How was I supposed to know my roommate was a dimension hopping witch!?",
     "ghFullName": "MarmadileManteater/HowWasISupposedToKnowMyRoommateWasADimensionHoppingWitch",
     "tags": [
@@ -78,36 +108,6 @@
     "lastUpdate": "2023-03-03T13:06:07Z",
     "pullUpdatedInfoFrom": "commits",
     "ghStars": 0
-  },
-  {
-    "type": "IProject",
-    "title": "FreeTubeCordova",
-    "ghFullName": "MarmadileManteater/FreeTubeCordova",
-    "tags": [
-      "javascript",
-      "webpack",
-      "cordova",
-      "invidious"
-    ],
-    "summary": "This is a fork of FreeTube which squashes everything into a web app and exports it to Android via Cordova.",
-    "buttons": [
-      {
-        "prefix": "View the",
-        "locationName": "web version",
-        "link": "/freetube/#/",
-        "target": "_blank"
-      },
-      {
-        "prefix": "View on",
-        "locationName": "GitHub",
-        "link": "https://github.com/MarmadileManteater/FreeTubeCordova",
-        "target": "_blank"
-      }
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/MarmadileManteater/FreeTubeCordova/development/_icons/.icon-set/iconColor_256.png",
-    "lastUpdate": "2023-03-09T14:11:29Z",
-    "pullUpdatedInfoFrom": "releases",
-    "ghStars": 78
   },
   {
     "type": "IProject",
