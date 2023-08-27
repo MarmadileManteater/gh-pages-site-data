@@ -24,14 +24,15 @@ async function main () {
       }
       sharp(imageUri)
       .resize(150)
-      .toFile(outputFileName, (err) => {
+      .toFile(outputFileName, async (err) => {
         if (err) {
           console.error(title, err)
         }
+        if (thumbnail.startsWith("https")) {
+          await fsp.unlink(imageUri)
+        }
       })
-      if (thumbnail.startsWith("https")) {
-        await fsp.unlink(imageUri)
-      }
+
     } else {
       console.log(`Skipping ${outputFileName} because it already exists`)
     }

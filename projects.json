@@ -31,6 +31,35 @@
   },
   {
     "type": "IProject",
+    "title": "Just Three Blocks Background",
+    "ghFullName": "MarmadileManteater/JustThreeBlocksBackground",
+    "tags": [
+      "csharp",
+      "godot",
+      "lively-wallpaper"
+    ],
+    "summary": "This is a background scene for my website. You can also use it in Lively Wallpaper.",
+    "buttons": [
+      {
+        "prefix": "Download for",
+        "locationName": "Lively Wallpaper",
+        "link": "https://github.com/MarmadileManteater/JustThreeBlocksBackground/releases",
+        "target": "_blank"
+      },
+      {
+        "prefix": "View on",
+        "locationName": "GitHub",
+        "link": "https://github.com/MarmadileManteater/JustThreeBlocksBackground",
+        "target": "_blank"
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/MarmadileManteater/JustThreeBlocksBackground/development/lively/thumbnail.jpg",
+    "lastUpdate": "2023-06-11T21:38:44Z",
+    "pullUpdatedInfoFrom": "releases",
+    "ghStars": 1
+  },
+  {
+    "type": "IProject",
     "title": "How was I supposed to know my roommate was a dimension hopping witch!?",
     "ghFullName": "MarmadileManteater/HowWasISupposedToKnowMyRoommateWasADimensionHoppingWitch",
     "tags": [
