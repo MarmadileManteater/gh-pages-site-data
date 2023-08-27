@@ -6,11 +6,13 @@
   "repository": "https://github.com/MarmadileManteater/gh-pages-site-data.git",
   "author": "Emma <MarmadileManteater@proton.me>",
   "dependencies": {
-    "typescript": "^4.9.4"
+    "sharp": "^0.32.5",
+    "typescript": "^4.9.4",
+    "undici": "^5.23.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.1",
     "@types/node": "^18.11.18",
-    "axios": "^1.2.2"
+    "axios": "^1.2.2",
+    "ts-node": "^10.9.1"
   }
 }
