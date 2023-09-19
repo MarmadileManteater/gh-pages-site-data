@@ -74,5 +74,9 @@
   {
     "name": "lively-wallpaper",
     "link": "https://github.com/rocksdanister/lively"
+  },
+  {
+    "name": "sveltekit",
+    "link": "https://kit.svelte.dev"
   }
 ]
