@@ -48,7 +48,7 @@
     "link": "https://godotengine.org/"
   },
   {
-    "name": "spooky2djam",
+    "name": "spooky-2d-jam-2022",
     "link": "https://itch.io/jam/spooky-2d-jam-2022"
   },
   {
@@ -78,5 +78,9 @@
   {
     "name": "sveltekit",
     "link": "https://kit.svelte.dev"
+  },
+  {
+    "name": "spooky-2d-jam-2023",
+    "link": "https://itch.io/jam/spooky-2d-jam-23"
   }
 ]
