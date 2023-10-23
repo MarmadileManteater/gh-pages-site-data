@@ -28,6 +28,8 @@ jobs:
         echo '{"token":"${{ secrets.PERSONAL_ACCESS_TOKEN }}"}' >> ./environment.json
     - name: 🦴 Fetch project data from GH API
       run: npx ts-node ./scripts/write-projects.ts
+    - name: 🧊 Unhotlink project images 
+      run: npx ts-node ./scripts/unhotlink-project-images.ts
     - name: 🧹 Clean-up environment
       run: rm environment.json
 #    - name: 🏹 Upload the results for verification
